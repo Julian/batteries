@@ -8,6 +8,7 @@ import Batteries.Data.HashMap.Basic
 import Batteries.Data.Nat.Lemmas
 import Batteries.Data.List.Lemmas
 
+set_option linter.deprecated false
 namespace Batteries.HashMap
 namespace Imp
 

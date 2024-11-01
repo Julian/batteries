@@ -12,6 +12,8 @@ Note that Lean core provides an alternative hash map implementation, `Std.HashMa
 more lemmas. See the module `Std.Data.HashMap.Lemmas`.
 -/
 
+set_option linter.deprecated false
+
 namespace Batteries.HashMap
 
 namespace Imp

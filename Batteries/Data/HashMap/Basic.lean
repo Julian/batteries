@@ -6,6 +6,9 @@ Authors: Leonardo de Moura, Mario Carneiro
 import Batteries.Data.AssocList
 import Batteries.Data.Nat.Basic
 import Batteries.Data.Array.Monadic
+import Std.Data.HashMap.Basic
+
+set_option linter.deprecated false
 
 namespace Batteries.HashMap
 
@@ -248,6 +251,7 @@ to find the values. This allows it to have very good performance for lookups
 meaning that one should take care to use the map linearly when performing updates.
 Copies are `O(n)`.
 -/
+@[deprecated Std.HashMap (since := "2024-11-01")]
 def _root_.Batteries.HashMap (α : Type u) (β : Type v) [BEq α] [Hashable α] := {m : Imp α β // m.WF}
 
 open HashMap.Imp
